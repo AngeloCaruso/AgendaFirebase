@@ -28,7 +28,6 @@ public class ListContact extends AppCompatActivity {
        TxtNoResults = (TextView)findViewById(R.id.TxtNoResults);
        ContactNames = new ArrayList<String>();
        Contacts.clear();
-       Data.sync();
        Contacts = Data.Get();
        System.out.println(Contacts);
 

@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Data.sync();
         LV = (ListView) findViewById(R.id.Options);
         Resources = this.getResources();
         Opc = Resources.getStringArray(R.array.Menu);
