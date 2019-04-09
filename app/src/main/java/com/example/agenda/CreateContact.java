@@ -37,9 +37,19 @@ public class CreateContact extends AppCompatActivity {
         PhoneV = Phone.getText().toString();
         CellphoneV = Cellphone.getText().toString();
 
-        Contact C = new Contact(ID, NameV, LastNameV, PhoneV, CellphoneV);
-        C.SaveContact();
-        Toast.makeText(this, R.string.done, Toast.LENGTH_LONG).show();
-        contacts.clear();
+        if (NameV.equals("")){
+            Toast.makeText(this, R.string.empty_err, Toast.LENGTH_LONG).show();
+        }else if(LastNameV.equals("")){
+            Toast.makeText(this, R.string.empty_err, Toast.LENGTH_LONG).show();
+        }else if(PhoneV.equals("")){
+            Toast.makeText(this, R.string.empty_err, Toast.LENGTH_LONG).show();
+        }else if(CellphoneV.equals("")){
+            Toast.makeText(this, R.string.empty_err, Toast.LENGTH_LONG).show();
+        }else{
+            Contact C = new Contact(ID, NameV, LastNameV, PhoneV, CellphoneV);
+            C.SaveContact();
+            Toast.makeText(this, R.string.done, Toast.LENGTH_LONG).show();
+            contacts.clear();
+        }
     }
 }

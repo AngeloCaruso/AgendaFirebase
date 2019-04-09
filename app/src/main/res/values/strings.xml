@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Agenda</string>
-    <string name="create">Create</string>
-    <string name="list">List</string>
+    <string name="create">Create contact</string>
+    <string name="list">List contacts</string>
     <string name="name">Name</string>
     <string name="last_name">Last Name</string>
     <string name="phone">Phone</string>
@@ -15,4 +15,5 @@
         <item>@string/create</item>
         <item>@string/list</item>
     </string-array>
+    <string name="empty_err">Please, fill every field</string>
 </resources>

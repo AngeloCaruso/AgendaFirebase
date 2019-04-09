@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Agenda</string>
+    <string name="create">Crear contacto</string>
+    <string name="list">Listar contactos</string>
+    <string name="name">Nombres</string>
+    <string name="last_name">Apellidos</string>
+    <string name="phone">Teléfono</string>
+    <string name="cellphone">Celular</string>
+    <string name="save">Guardar</string>
+    <string name="done">Contacto guardado</string>
+    <string name="no_records">No hay contactos</string>
+    <string name="empty_err">Por favor, llene todos los campos</string>
+</resources>
